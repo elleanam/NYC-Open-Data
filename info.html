@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>Squirrel Information</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body onload="init()">
+
+<div id="banner">
+  <h1>Squirrel Information</h1>
+  <h2>Search Squirrel Observations</h2>
+</div>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="info.html">Information</a>
+  <a href="analysis.html">Analysis</a>
+</nav>
+
+<div class="container">
+
+  <div class="card">
+    <h3>Fur Color</h3>
+    <input id="furColor" placeholder="Gray">
+    <br><br>
+    <button class="button" onclick="filterByColor()">Search</button>
+  </div>
+
+  <div class="card">
+    <h3>Age</h3>
+    <input id="age" placeholder="Adult">
+    <br><br>
+    <button class="button" onclick="filterByAge()">Search</button>
+  </div>
+
+  <div class="card">
+    <h3>Shift</h3>
+    <input id="shift" placeholder="AM">
+    <br><br>
+    <button class="button" onclick="filterByShift()">Search</button>
+  </div>
+
+</div>
+
+<div id="result" class="card"></div>
+
+<div id="output" class="container"></div>
+
+</body>
+</html>
